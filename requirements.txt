@@ -1,0 +1,13 @@
+# 기본(공통)
+streamlit>=1.36
+google-generativeai>=0.7.0
+requests>=2.31
+pillow>=10.0
+
+# 🔊 TTS(음성 출력) — Windows에서만 자동 설치(로컬 PC 스피커로 출력)
+pyttsx3>=2.90 ; platform_system == "Windows"
+comtypes>=1.1.14 ; platform_system == "Windows"
+
+# (선택) macOS에서 TTS가 꼭 필요하면 아래 2줄의 주석을 해제하세요.
+# pyobjc-core>=10.2 ; platform_system == "Darwin"
+# pyobjc-framework-Cocoa>=10.2 ; platform_system == "Darwin"
